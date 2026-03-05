@@ -195,10 +195,24 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2026-03-05 :21:48:13 / Modified: :22:06:22" itemprop="dateCreated datePublished" datetime="2026-03-05T21:48:13+08:00">2026-03-05</time>
+      <time title="Created: 2026-03-05 :21:48:13 / Modified: :22:23:13" itemprop="dateCreated datePublished" datetime="2026-03-05T21:48:13+08:00">2026-03-05</time>
     </span>
 
   
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>564</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>2 mins.</span>
+    </span>
 </div>
 
         </div>
@@ -209,7 +223,38 @@
     
     <div class="post-body" itemprop="articleBody"><p>本文摘要：本文摘要121212122</p>
 <span id="more"></span>
-<p>12121</p>
+<p>参考资料：<br>
+51CTO博主 缥缈峰虚竹 PCB学习笔记——关于在原理图修改封装出现cannot match pads with new footprint问题<br>
+<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_15316847/3220912">https://blog.51cto.com/u_15316847/3220912</a><br>
+CSDN博主 StrongerSun AD导入封装出现cannot match pads with new footprint问题<br>
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/zhuimeng_ruili/article/details/115362038">https://blog.csdn.net/zhuimeng_ruili/article/details/115362038</a></p>
+<p>本文知识产权归作者所有，未经许可不得转载、摘编或用于商业用途。<br>
+作者保留随时修改、更新或删除本文内容的权利，恕不另行通知。<br>
+作者不保证内容的准确性、完整性、时效性，技术内容可能随时间变化。<br>
+文中引用内容版权归原作者所有，如有侵权请联系删除。<br>
+如涉及版权问题，请联系删除。联系方式：<a href="mailto:luguang_back@outlook.com">luguang_back@outlook.com</a>（仅用于版权沟通，作者将在7个工作日内回复）</p>
+<p>PCB软件 错误提示 ”Cannot match pads with new footprint in component :Y2 Footprint:XTAL-49S DIP“</p>
+<p>1.错误介绍</p>
+<p>笔者在进行PCB元件摆放时，发现元件封装有问题，需要进行更改。</p>
+<p>具体错误信息提示及截图：Cannot match pads with new footprint in component :Y2 Footprint:XTAL-49S DIP</p>
+<p>这里的 &quot;FootPrint Not Found XTAL-495 DIP&quot;错误提示，在后文也会提到</p>
+<p>image</p>
+<p>具体原因是原来的晶振封装是4个引脚，但是 ”XTAL-49S DIP“ 只有两个引脚。所以出现了引脚不匹配的情况。</p>
+<p>也正是因为之前的晶振封装是4个引脚，所以晶振的上端点号为4，笔者导入到 “.PcbDoc” 文件时也是按此导入的。</p>
+<p>image</p>
+<p>既然 “.PcbDoc” 文件是1-&gt;OSCOUT , 4-&gt;OSCIN ，那么我的方法就是在 “.SchDoc” 文件中更改封装的管脚映射，使之匹配。</p>
+<p>image</p>
+<p>这里将元件管脚号1 4 对应模型管脚号1 2</p>
+<p>&quot;FootPrint Not Found XTAL-495 DIP&quot;错误提示是因为该图中 “PCB元件库” 路径没有配置好，我之前选择的是库路径，但却没有配置。</p>
+<p>image</p>
+<p>之后来到 “PcbDoc” 文件，删除晶振Y1，Y2。进行导入</p>
+<p>image</p>
+<p>“验证更改”弹出错误提示，依然继续进行“执行更改”，点击”关闭“</p>
+<p>image</p>
+<p>到此已结束！</p>
+<p>image</p>
+<p>本文仅用于学习交流，欢迎读者指正！<br>
+12121</p>
 
     </div>
 
@@ -276,6 +321,22 @@
 <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 </span>
   </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Word count total: </span>
+    <span title="Word count total">1k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">2 mins.</span>
+  </span>
+</div>
 
     </div>
   </footer>
