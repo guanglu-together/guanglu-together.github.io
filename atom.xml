@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>
-    <name>Lu guang</name>
+    <name>陆光</name>
   </author>
   <generator uri="https://hexo.io/">Hexo</generator>
   <id>http://guanglu-together.github.io/</id>
   <link href="http://guanglu-together.github.io/" rel="alternate"/>
   <link href="http://guanglu-together.github.io/atom.xml" rel="self"/>
-  <rights>All rights reserved 2026, Lu guang</rights>
-  <title>Lu guang's personal blogs</title>
-  <updated>2026-03-05T14:23:13.810Z</updated>
+  <rights>All rights reserved 2026, 陆光</rights>
+  <title>Guang Lu's personal blogs</title>
+  <updated>2026-03-18T12:18:30.317Z</updated>
   <entry>
     <author>
-      <name>Lu guang</name>
+      <name>陆光</name>
     </author>
-    <id>http://guanglu-together.github.io/2026/03/05/me/</id>
-    <link href="http://guanglu-together.github.io/2026/03/05/me/"/>
-    <published>2026-03-05T13:48:13.000Z</published>
+    <category term="8051" scheme="http://guanglu-together.github.io/tags/8051/"/>
+    <category term="MCU" scheme="http://guanglu-together.github.io/tags/MCU/"/>
+    <id>http://guanglu-together.github.io/2026/03/18/MCU_8051/</id>
+    <link href="http://guanglu-together.github.io/2026/03/18/MCU_8051/"/>
+    <published>2026-03-18T10:35:21.000Z</published>
     <summary>
-      <![CDATA[<p>本文摘要：本文摘要121212122</p>]]>
+      <![CDATA[<p>The post is intened to be used as a record with the STC-89C52RC development board.</p>]]>
     </summary>
-    <title>signed me</title>
-    <updated>2026-03-05T14:23:13.810Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Lu guang</name>
-    </author>
-    <id>http://guanglu-together.github.io/2026/02/10/sign/</id>
-    <link href="http://guanglu-together.github.io/2026/02/10/sign/"/>
-    <published>2026-02-10T07:23:00.416Z</published>
-    <updated>2026-02-10T07:23:01.987Z</updated>
+    <title>MCU_8051</title>
+    <updated>2026-03-18T12:18:30.317Z</updated>
   </entry>
 </feed>
