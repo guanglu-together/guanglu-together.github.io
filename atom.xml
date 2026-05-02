@@ -9,18 +9,20 @@
   <link href="http://guanglu-together.github.io/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, 陆光</rights>
   <title>Guang Lu's personal blogs</title>
-  <updated>2026-05-02T07:54:11.884Z</updated>
+  <updated>2026-05-02T08:37:24.902Z</updated>
   <entry>
     <author>
       <name>陆光</name>
     </author>
-    <id>http://guanglu-together.github.io/2026/03/14/MCU_8051/</id>
-    <link href="http://guanglu-together.github.io/2026/03/14/MCU_8051/"/>
-    <published>2026-03-14T06:03:57.040Z</published>
+    <category term="8051" scheme="http://guanglu-together.github.io/tags/8051/"/>
+    <category term="MCU" scheme="http://guanglu-together.github.io/tags/MCU/"/>
+    <id>http://guanglu-together.github.io/2026/03/18/MCU_8051/</id>
+    <link href="http://guanglu-together.github.io/2026/03/18/MCU_8051/"/>
+    <published>2026-03-18T10:35:21.000Z</published>
     <summary>
-      <![CDATA[<p>记录开始时间:2026/3/14<br>
-文章介绍：本文件以项目实践学习8051架构，后续的理论学习知识，随时增补。</p>]]>
+      <![CDATA[<p>The post is intened to be used as a record with the STC-89C52RC development board.</p>]]>
     </summary>
-    <updated>2026-05-02T07:54:11.884Z</updated>
+    <title>MCU_8051</title>
+    <updated>2026-05-02T08:37:24.902Z</updated>
   </entry>
 </feed>
