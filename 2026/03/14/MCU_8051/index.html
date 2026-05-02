@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"guanglu-together.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+
+
+
+<link rel="canonical" href="http://guanglu-together.github.io/2026/03/14/MCU_8051/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://guanglu-together.github.io/2026/03/14/MCU_8051/","path":"2026/03/14/MCU_8051/","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | Guang Lu's personal blogs</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js" defer></script>
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Guang Lu's personal blogs" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Guang Lu's personal blogs</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">Tags<span class="badge">0</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">Categories<span class="badge">0</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">Archives<span class="badge">1</span></a></li><li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section">Schedule</a></li><li class="menu-item menu-item-resources"><a href="/resources/" rel="section">Resources</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%84%E5%AD%98%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">寄存器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E5%99%A8%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">定时器：</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="陆光"
+      src="/images/favicon.svg">
+  <p class="site-author-name" itemprop="name">陆光</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/guanglu-together" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;guanglu-together" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luguang15215469982@outlook.com" title="E-Mail → mailto:luguang15215469982@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cnblogs.com/luguang06" title="cnblogs → https:&#x2F;&#x2F;www.cnblogs.com&#x2F;luguang06" rel="noopener me" target="_blank"><i class="fab fa-blog fa-fw"></i>cnblogs</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/en" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/big/by.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://guanglu-together.github.io/" title="https:guanglu-together.github.io" rel="noopener" target="_blank">Title</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://guanglu-together.github.io/2026/03/14/MCU_8051/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/favicon.svg">
+      <meta itemprop="name" content="陆光">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Guang Lu's personal blogs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Guang Lu's personal blogs">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2026-03-14 :14:03:57" itemprop="dateCreated datePublished" datetime="2026-03-14T14:03:57+08:00">2026-03-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-05-02 :15:54:11" itemprop="dateModified" datetime="2026-05-02T15:54:11+08:00">2026-05-02</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>1.5k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>5 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>记录开始时间:2026/3/14<br>
+文章介绍：本文件以项目实践学习8051架构，后续的理论学习知识，随时增补。</p>
+<span id="more"></span>
+<p>环境介绍：硬件为KST-51 开发板 v1.3.2，编译环境KeilV5 9.54，程序烧录工具 STC-ISP_v6.94L<br>
+资料: [KST-51_DataSheet]  [STC89C52RC-en]<br>
+笔者联系方式：<a href="mailto:luguang15215469982_back@outlook.com">luguang15215469982_back@outlook.com</a><br>
+注：请读者注意，该博客大多图片使用avif 格式，需要完全加载才能显示在页面上面。</p>
+<h2 id="寄存器">寄存器</h2>
+<h3 id="定时器：">定时器：</h3>
+<p><strong>八位重装载模式</strong> 定时器定时时间计算：CNT(255 - TL1) = 921600 * T(s)<br>
+同时在八位重装载模式下，TL1 从零开始计数，TL1为八位，也就是累积至255，当255 + 1 时 TF1 = 1，同时需要注意 TF1 这里需要手动清零。<br>
+对于<strong>查询法/轮询法</strong>实现定时器，以下是示例程序</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">// Realize the 10ms LED repeatedly light, e.g. LED = 1 sustain 10ms, later LED = 0 sustain 10ms continuously repeating.</span><br><span class="line">// The the procedure, the LED signal is at a frequency of 50 hertz.</span><br><span class="line">// Implementation of timer using query method</span><br><span class="line"></span><br><span class="line">#include &lt;reg52.h&gt;</span><br><span class="line"></span><br><span class="line">sbit LED = P0^0;</span><br><span class="line">sbit ADDR0 = P1^0;</span><br><span class="line">sbit ADDR1 = P1^1;</span><br><span class="line">sbit ADDR2 = P1^2;</span><br><span class="line">sbit ADDR3 = P1^3;</span><br><span class="line">sbit ENLED = P1^4;</span><br><span class="line"></span><br><span class="line">void main(void)</span><br><span class="line">&#123;</span><br><span class="line">	unsigned int CNT = 0;</span><br><span class="line">	ADDR3 = 1;</span><br><span class="line">	ADDR2 = 1;</span><br><span class="line">	ADDR1 = 1;</span><br><span class="line">	ADDR0 = 0;</span><br><span class="line">	ENLED = 0;</span><br><span class="line">	TH1 = 0xB7;</span><br><span class="line">	TL1 = 0xB7;</span><br><span class="line">	TMOD = 0x20; //0010 0000</span><br><span class="line">	LED = 1;</span><br><span class="line">	TR1 = 1;</span><br><span class="line">	while(1) &#123;</span><br><span class="line">		if (TF1)&#123;</span><br><span class="line">			if(++CNT == 128) &#123; //TIMING_LED(s) = (255 - TL1) * CNT * 12 / 11059200</span><br><span class="line">				LED = ~LED;  //CNT(255 - TL1) = 921600 * T(s)</span><br><span class="line">				CNT = 0;</span><br><span class="line">			&#125;</span><br><span class="line">			TF1 = 0;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>上面这个程序通过Proteus 仿真出来测得的频率大约是50hertz，但是会出现<strong>49hertz</strong>的情况，如下图所示。因本人才疏学浅，暂未分析影响该结果真正原因。如读者对此问题有自己的想法，可以联系通过文章开头的邮箱联系我，感谢读者的反馈，还请读者多多担待！<br>
+<img src="https://pic.luguang.top/img/blog/8-bit-reloaded-timer-mode.avif" alt="8-bit-reloaded-timer-mode.avif" width="700" height="550"></p>
+<p><strong>中断法实现</strong><br>
+通过中断可以实现硬件自动通知CPU，极大减少CPU占用，同时使得响应延迟固定，避免不确定的响应延迟<br>
+以下是示例程序</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>硬件自动翻转</strong></p>
+<p><strong>软件 + 硬件(定时器触发 + 外设联动)</strong></p>
+<p><strong>硬件介绍</strong><br>
+PNP：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><a target="_blank" rel="noopener" href="https://www.digikey.cn/zh/forum/t/topic/3696">三极管典型开关电路</a></p>
+</li>
+<li class="lvl-2">
+<p>三极管是CCCS器件（电流控制电流源），添加<strong>基极限流电阻</strong>防止损坏MCU管脚，</p>
+</li>
+<li class="lvl-2">
+<p>第二，三极管基极输入阻抗（基极未被驱动，也就是悬空/高阻态时的等效对地阻抗）较高，当上电初始化容易受到噪声干扰，因此需要确保三极管截止，避免不必要的动作。对于NPN三极管，当基极高电平时导通，因此需要<strong>基极下拉电阻</strong>，确保三极管可靠截止。而PNP三极管，需要加<strong>基极上拉电阻</strong>。因为三极管内部存在电荷存储效应，基区残留的电荷需要释放，并联在B和E之间的电阻提供了放电回路，因此基极上/下拉电阻还可以缩短管段时间，提高开关速度。</p>
+</li>
+<li class="lvl-2">
+<p>第三，集电极电阻Rc用于限流，限制流过负载的电流，防止过流损坏。集电极电阻Rc还可以实现电流-电压转换，可以应用到放大器或逻辑反相器，Vout = Vcc - Ic * Rc，集电极电阻压降随Ic 增大而增大，成正比。</p>
+</li>
+<li class="lvl-2">
+<p>这里补充一下，为什么高基极输入阻抗会导致易受噪声干扰。当BE结未正偏导通时，基极对GND几乎没有直流通路，有极小的漏电流，此时该节点的等效阻抗可达M Ohms甚至更高。这时外界耦合的干扰电流即使只有1nA，经过10M Ohms的悬空阻抗也会产生10mV的电压波动。而三极管导通后，BE结正偏，动态阻抗很低，不会易受噪声干扰<br>
+有关Proteus 仿真反思，我以为在Proteus 里对于PNP 不需要上拉电阻了，但是在仿真实现中遇到了只有仿真会出现的问题，关于详细信息，您可以点击以下两个链接获取详细信息，<a target="_blank" rel="noopener" href="https://pic.luguang.top/img/blog/pnp-driver-issue-code.pdf">Keil-code.pdf</a>，<a target="_blank" rel="noopener" href="https://pic.luguang.top/img/blog/pnp-driver-issue.pdf">Proteus.pdf</a>。该工程通过配置74HC138，选中六位八段数码管。您可以在代码中观察到，我只配置了LEDS0 = 0，也就是只指定了Q2 PNP导通，但是结果Q3，Q5却也导通了。这里的问题是没有上拉电阻，原因在前面提到了，尽管是在仿真中实现。<br>
+解决方案如下<br>
+<a target="_blank" rel="noopener" href="https://pic.luguang.top/img/blog/proteus-pull-up-res-six-bit-timer.pdf">proteus-resoltion.pdf</a><br>
+<a target="_blank" rel="noopener" href="https://pic.luguang.top/img/blog/proteus-pnp-pull-up-res-six-bit-timer.rar">proteus工程文件</a><br>
+这两份文件可以实现六位定时器功能，方法是通过定时器中断实现动态扫描。代码这里部分参考**《手把手教你学51单片机-C语言版》P68**</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;reg52.h&gt;</span><br><span class="line"></span><br><span class="line">typedef unsigned char  U8;</span><br><span class="line">typedef unsigned int   U16;</span><br><span class="line"></span><br><span class="line">#define T0_RELOAD_HIGH  0xFC</span><br><span class="line">#define T0_RELOAD_LOW   0x67</span><br><span class="line">#define T0_COUNT_1S     1000</span><br><span class="line"></span><br><span class="line">sbit ADDR0 = P1^0;</span><br><span class="line">sbit ADDR1 = P1^1;</span><br><span class="line">sbit ADDR2 = P1^2;</span><br><span class="line">sbit ADDR3 = P1^3;</span><br><span class="line">sbit ENLED = P1^4;</span><br><span class="line"></span><br><span class="line">U8 code LedChar[] = &#123;</span><br><span class="line">    0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,</span><br><span class="line">    0x80,0x90,0x88,0x83,0xC6,0xA1,0x86,0x8E</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">U8 data LedBuff[6] = &#123;0xFF,0xFF,0xFF,0xFF,0xFF,0xFF&#125;;</span><br><span class="line">U8 data sec_buf[6] = &#123;0&#125;;</span><br><span class="line">U16 data cnt = 0;</span><br><span class="line">bit flag1s = 0;</span><br><span class="line"></span><br><span class="line">void SecAddOne(void) &#123;</span><br><span class="line">    U8 k = 0;</span><br><span class="line">    sec_buf[0]++;</span><br><span class="line">    while (sec_buf[k] &gt;= 10) &#123;</span><br><span class="line">        sec_buf[k] = 0;</span><br><span class="line">        k++;</span><br><span class="line">        if (k &lt; 6) sec_buf[k]++;</span><br><span class="line">    &#125;</span><br><span class="line">    LedBuff[0] = LedChar[sec_buf[0]];</span><br><span class="line">    LedBuff[1] = LedChar[sec_buf[1]];</span><br><span class="line">    LedBuff[2] = LedChar[sec_buf[2]];</span><br><span class="line">    LedBuff[3] = LedChar[sec_buf[3]];</span><br><span class="line">    LedBuff[4] = LedChar[sec_buf[4]];</span><br><span class="line">    LedBuff[5] = LedChar[sec_buf[5]];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void main() &#123;</span><br><span class="line">    ENLED = 0;</span><br><span class="line">    ADDR3 = 1;</span><br><span class="line">    TMOD = 0x01;</span><br><span class="line">    TH0 = T0_RELOAD_HIGH;</span><br><span class="line">    TL0 = T0_RELOAD_LOW;</span><br><span class="line">    ET0 = 1;</span><br><span class="line">    EA = 1;</span><br><span class="line">    TR0 = 1;</span><br><span class="line"></span><br><span class="line">    while(1) &#123;</span><br><span class="line">        if (flag1s) &#123;</span><br><span class="line">            flag1s = 0;</span><br><span class="line">            SecAddOne();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Timer0_ISR() interrupt 1 &#123;</span><br><span class="line">    static U8 i = 0;                 	// Here, the&quot;Static&quot; keyword is used to archieve the effect of being assigned only once. </span><br><span class="line">    TH0 = T0_RELOAD_HIGH;</span><br><span class="line">    TL0 = T0_RELOAD_LOW;</span><br><span class="line"></span><br><span class="line">    cnt++;</span><br><span class="line">    if (cnt &gt;= T0_COUNT_1S) &#123;</span><br><span class="line">        cnt = 0;</span><br><span class="line">        flag1s = 1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    P0 = 0xFF;                    // 消隐</span><br><span class="line">    P1 = (P1 &amp; 0xF8) | i;        // 一次性更新位选</span><br><span class="line">    P0 = LedBuff[i];</span><br><span class="line">    i++;</span><br><span class="line">    if (i &gt;= 6) i = 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在该代码中使用了16位定时器模式，这里要注意因为使用的 IC 是stc89c52rc，机器周期是12/11059200。通过 ISR 实现1ms 定时，当累积到1s，也就是1000次 ISR，置位flag1s。在main函数中调用SecAddOne函数，该函数的作用是每1s在个位进位1次，也就是个位加一。在达到999999+1，根据SecAddOne 函数中的if (k &lt; 6) sec_buf[k]++; 这一句配合while(sec_buf[k] &gt;= 10)实现000000的显示。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>陆光
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://guanglu-together.github.io/2026/03/14/MCU_8051/" title="">http://guanglu-together.github.io/2026/03/14/MCU_8051/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+  </div>
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">This work is licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Word count total: </span>
+    <span title="Word count total">2k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">5 mins.</span>
+  </span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
